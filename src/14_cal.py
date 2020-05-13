@@ -42,8 +42,20 @@ def print_calendar(year=current_year, month=current_month):
     print("wrong input")
 
 
-if len(sys.argv) > 1:
+if len(sys.argv) == 2:
+  month = int(sys.argv[1])
+  print_calendar(month=month)
+elif len(sys.argv) == 3:
   month = int(sys.argv[1])
   year = int(sys.argv[2])
   print_calendar(year,month)
+else:
+  print_calendar()
+
+  
+
+  
+  
+  
+  
   
